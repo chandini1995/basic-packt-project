@@ -1,0 +1,20 @@
+<div *ngFor="let course of courses">
+    <b>{{course}}</b>
+    <div>the code that renders above is{{ "{{course}}" }}</div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <td [ngStyle]="{color:'color','background-color':'blue'}">1st name</td>
+            <td>lasst name</td>
+            <td>score</td>
+
+        </tr>
+    </thead>
+    <tr *ngFor="let student of students">
+        <td [style.color]="'blue'">{{student.fName}}</td>
+        <td [style.background-color]="'color'" [style.font-size.px]="fontSize">{{student.lName}}</td>
+        <td [style.color]="'green'" [ngClass]="{tdata:true}">{{student.score}}</td>
+    </tr>
+</table>

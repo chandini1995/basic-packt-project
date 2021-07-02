@@ -1,0 +1,54 @@
+
+<table border="3" cellSpacing="2px" cellPadding="2px" align="bottom"
+ style="font-size: 25px;">
+    <thead style="background-color: grey;">
+        <tr>
+            <th>Id
+            </th>
+            <th>Name</th>
+            <th>userName
+            </th>
+            <th>email</th>
+            <th>CityAddress</th>
+            <th>phone</th>
+           
+            <th>website</th>
+<th>company</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of data">
+            <td>{{c.id}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.username}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.address.city}}</td>
+            <td>{{c.phone}}</td>
+            <td>{{c.website}}</td>
+            <td>{{c.company.name}}</td>
+         </tr>
+    </tbody>
+</table>
+
+<table>
+    <thead>
+        <tr>
+            <th>status</th>
+            <th>data</th>
+            <th>message</th>
+            <th>successful</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of data1">
+            <td>{{c.page}}</td>
+            <td>{{c.name}}</td>
+            <td>{{c.email}}</td>
+            <td>{{c.data}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- http://test-rotes.herokuapp.com/test/uppercase -->
